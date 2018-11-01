@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.logo {
+	border: solid 2px grey;
+	width: 60px;
+	height: 60px;
+	float : right;
+	margin: 10px;
+}
+
+.logo .inside {
+    font-size: small;
+}
+
+.kawung {
+	border: solid 2px grey;
+	width: 100px;
+	height: 100px;
+    position: absolute;
+}
+
+#kawung-atas {
+	margin-top: 8vh;
+    margin-left: 16vw;
+}
+
+#kawung-bawah {
+    margin-top: 0;
+    margin-left: 50vw;
+    transform: translateX(24vw) translateY(-4vh);
+}
+
+.welcome {
+	width: 50%;
+    max-width: 600px;
+	height: 50%;
+	align-items: center;
+    margin: 20vh auto 0 auto;
+}
+
+.welcome-image {
+	border: solid 2px grey;
+	width: calc(100% - 4px);
+	height: 90%;
+}
+
+.inside {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    width: 100%;
+    padding: auto;
+    overflow: auto;
+}
+input {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20%;
+    text-align: center;
+    height: 50px;
+    font-size: xx-large;
+}

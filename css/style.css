@@ -7,18 +7,18 @@ html, body {
     min-height: 100%;
     height: 100%;
     overflow: hidden;
-    padding: 3px;
 }
 
-.logo {
+.logo-image {
 	border: solid 2px grey;
 	width: 60px;
 	height: 60px;
 	float : right;
 	margin: 10px;
+    box-sizing: unset;
 }
 
-.logo .inside {
+.logo-image .inside {
     font-size: small;
 }
 
@@ -30,19 +30,18 @@ html, body {
 }
 
 #kawung-atas {
-	margin-top: 8vh;
-    margin-left: 16vw;
+    transform: translateX(-130px) translateY(-100px);
 }
 
 #kawung-bawah {
-    margin-top: 0;
-    margin-left: 50vw;
-    transform: translateX(24vw) translateY(-4vh);
+    display: inline;
+    transform: translateX(140px) translateY(-20px);
 }
 
 .welcome {
 	width: 50%;
     max-width: 600px;
+    min-width: 500px;
 	height: 50%;
 	align-items: center;
     margin: 20vh auto 0 auto;
@@ -75,4 +74,46 @@ input {
     text-align: center;
     height: 50px;
     font-size: xx-large;
+}
+
+#rule {
+    margin-top: 9%;
+    padding: 0 20px ;
+}
+
+#rule-kawung {
+    transform: translateX(-50px) translateY(-20px);
+}
+
+.leftImage {
+    border: solid 2px grey;
+    width: 100%;
+    height: 350px;
+}
+
+.rule-title {
+    font-size: 30px;
+    text-align: center;
+    border: solid 2px grey;
+}
+
+.rule-desc {
+    border: solid 2px grey;
+    height: 49%;
+    font-size: xx-large;
+    margin: 10px;
+}
+
+.rule-button {
+    margin: auto;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.rule-button:hover {
+    background-color: grey;
+    cursor: pointer;
+    color: white;
 }

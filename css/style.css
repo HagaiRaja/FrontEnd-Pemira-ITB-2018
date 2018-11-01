@@ -40,7 +40,7 @@ html, body {
 
 .welcome {
 	width: 50%;
-    max-width: 600px;
+    max-width: 500px;
     min-width: 500px;
 	height: 50%;
 	align-items: center;
@@ -206,4 +206,25 @@ input {
 
 #accept {
     margin-left: calc(90%);
+}
+
+.thanks {
+    width: 70%;
+    max-width: 600px;
+    min-width: 500px;
+    height: 60%;
+    align-items: center;
+    margin: 20vh auto 0 auto;
+}
+
+#kawung-atas-rapat {
+    transform: translateX(-80px) translateY(-10vh);
+    z-index: 2;
+    background-color: white;
+}
+
+#kawung-bawah-rapat {
+    transform: translateX(590px) translateY(-20px);
+    z-index: 2;
+    background-color: white;
 }

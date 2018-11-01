@@ -23,10 +23,34 @@ html, body {
 }
 
 .kawung {
-	border: solid 2px grey;
 	width: 100px;
 	height: 100px;
     position: absolute;
+}
+
+.kawung-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.kawung-img-active {
+    animation: rotate 20s infinite;
+}
+
+.candidate-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.filter {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(720deg);
+    }
 }
 
 #kawung-atas {
@@ -51,6 +75,7 @@ html, body {
 	border: solid 2px grey;
 	width: calc(100% - 4px);
 	height: 90%;
+    background-image: url("../img/Welcome-Image.png");
 }
 
 .inside {
@@ -167,13 +192,11 @@ input {
 }
 
 .kawung-kecil {
-    border: solid 2px grey;
     width: 80px;
     height: 80px;
     position: absolute;
     transform: translateX(-40px) translateY(-40px);
     z-index: 2;
-    background-color: white;
     color: black;
 }
 

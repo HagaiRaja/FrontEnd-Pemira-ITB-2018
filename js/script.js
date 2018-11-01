@@ -11,12 +11,16 @@ input.addEventListener("keyup", function(event) {
 function select(index_candidate) {
     var prev = document.getElementById("selected").innerHTML;
     console.log(prev)
+    var x = document.getElementsByClassName("candidate");
     if (prev != index_candidate) {
-        var x = document.getElementsByClassName("candidate");
-
         x[index_candidate].classList.add("candidate-active");
-        x[prev].classList.remove("candidate-active");
         document.getElementById("selected").innerHTML = index_candidate;
+    }
+    else {
+        document.getElementById("selected").innerHTML = -1;
+    }
+    if (prev != -1) {
+        x[prev].classList.remove("candidate-active");
     }
 }
 

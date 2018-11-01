@@ -121,10 +121,9 @@ input {
 
 .timer {
     position: absolute;
-    border: solid 2px grey;
     margin: 30px 0px 0px 80px;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 80px;
     float : left;
     box-sizing: unset;
@@ -154,6 +153,11 @@ input {
     border: solid 2px grey;
     height: 40%;
     margin: 40px 30px;
+}
+
+.candidate-active {
+    background-color: grey;
+    color: white;
 }
 
 .candidate:hover {

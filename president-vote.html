@@ -3,6 +3,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/TimeCircles.css" />
 </head>
 
 <body>
@@ -18,9 +22,7 @@
         </div>
     </div>
     <div class="timer">
-        <div class="inside">
-            Timer
-        </div>
+        <div id="CountDownTimer" data-timer="20" style="width: 100px; height: 100px;"></div>
     </div>
     <div class="container">
         <div class="col-7" style="max-width: none;">
@@ -30,8 +32,8 @@
         </div>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-2 candidate">
+    <div class="row justify-content-center" id="candidate-container">
+        <div class="col-2 candidate" id="candidate0" onclick="select(0);">
             <div class="kawung-kecil">
                 <div class="inside">
                     KAWUNG
@@ -42,7 +44,7 @@
             </div>
         </div>
 
-        <div class="col-2 candidate">
+        <div class="col-2 candidate" id="candidate1" onclick="select(1);">
             <div class="kawung-kecil">
                 <div class="inside">
                     KAWUNG
@@ -53,7 +55,7 @@
             </div>
         </div>
 
-        <div class="col-2 candidate">
+        <div class="col-2 candidate" id="candidate2" onclick="select(2);">
             <div class="kawung-kecil">
                 <div class="inside">
                     KAWUNG
@@ -64,7 +66,7 @@
             </div>
         </div>
 
-        <div class="col-2 candidate">
+        <div class="col-2 candidate" id="candidate3" onclick="select(3);">
             <div class="kawung-kecil">
                 <div class="inside">
                     KAWUNG
@@ -74,6 +76,21 @@
                 Gambar kandidat 4
             </div>
         </div>
+        <div id="selected" style="display: none">2</div>
     </div>
 </div>
+
+<script>
+    $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false }, Minutes: { show: false } }});
+    $("#CountDownTimer").TimeCircles({count_past_zero: false});
+    $("#CountDownTimer").TimeCircles({total_duration: 20});
+
+    $("#CountDownTimer").TimeCircles({count_past_zero: false}).addListener(countdownComplete);
+
+    function countdownComplete(unit, value, total){
+        if(total<=0){
+            $(this).fadeOut('slow').replaceWith("<h2>Time's Up!</h2>");
+        }
+    }
+</script>
 </body>

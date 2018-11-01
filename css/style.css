@@ -158,6 +158,8 @@ input {
 
 .candidate:hover {
     cursor: pointer;
+    background-color: grey;
+    color: white;
 }
 
 .kawung-kecil {
@@ -168,6 +170,7 @@ input {
     transform: translateX(-40px) translateY(-40px);
     z-index: 2;
     background-color: white;
+    color: black;
 }
 
 .confirm-title {

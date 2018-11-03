@@ -78,6 +78,12 @@ html, body {
     background-image: url("../img/Welcome-Image.png");
 }
 
+.thanks-image {
+    border: solid 2px grey;
+    width: calc(100% - 4px);
+    height: 90%;
+}
+
 .inside {
     position: relative;
     float: left;
@@ -217,7 +223,6 @@ input {
 }
 
 .kawung-chosen {
-    border: solid 2px grey;
     width: 120px;
     height: 120px;
     position: absolute;

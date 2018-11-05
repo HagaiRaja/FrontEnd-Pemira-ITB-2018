@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/4.1/examples/sign-in/ -->
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Hagai Raja Sinulingga">
+    <!--<link rel="icon" href="#">-->
+
+    <title>Open Data | PEMIRA ITB 2018</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="./js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js.download"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/sign-in.css" rel="stylesheet">
+    <link href="./css/form-validation.css" rel="stylesheet">
+</head>
+
+<body class="text-center" data-gr-c-s-loaded="true">
+<div class="card card-container" id="open-card">
+    <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+    <img id="profile-img" class="profile-img-card" src="./img/LOGO%20PEMIRA4.png" />
+    <p id="profile-name" class="profile-name-card">Masuk ke Laman <br>Pembukaan Kotak Suara</p>
+    <form novalidate="" id="formID" action="#" method="post">
+        <span id="reauth-email" class="reauth-email"></span>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd1" name="pwd1" class="form-control" placeholder="Password 1" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd2" name="pwd2" class="form-control" placeholder="Password 2" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd3" name="pwd3" class="form-control" placeholder="Password 3" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd4" name="pwd4" class="form-control" placeholder="Password 4" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd5" name="pwd5" class="form-control" placeholder="Password 5" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd6" name="pwd6" class="form-control" placeholder="Password 6" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd7" name="pwd7" class="form-control" placeholder="Password 7" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="password" id="pwd8" name="pwd8" class="form-control" placeholder="Password 8" required>
+                <div class="invalid-feedback">
+                    Valid password is required.
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block btn-signin" name="submit" type="submit">Sign in</button>
+    </form><!-- /form -->
+    <a href="mailto:hagairaja@gmail.com?Subject=ResetPassword" class="forgot-password">
+        Lupa kata sandi?
+    </a>
+</div><!-- /card-container -->
+<script src="./js/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./js/popper.min.js.download"></script>
+<script src="./js/bootstrap.min.js.download"></script>
+<script src="./js/holder.min.js.download"></script>
+<script src="./js/photo.js"></script>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+</body></html>
